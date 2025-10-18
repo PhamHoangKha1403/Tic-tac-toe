@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css'; // thêm dòng này để load CSS
+import './App.css'; 
 
 function Square({ value, onSquareClick, highlight }) {
   return (
