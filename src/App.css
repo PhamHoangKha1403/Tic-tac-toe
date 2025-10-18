@@ -11,35 +11,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
+/* Khung game chính */
 .game {
-  position: fixed; 
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 40px;
   background: #fff;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  max-height: 90vh; 
+  padding: 50px 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  width: 750px;      /* rộng hơn */
+  height: 500px;     /* cao hơn */
 }
 
+/* Ô vuông trong bảng */
 .square {
   background: #fff;
   border: 2px solid #555;
   float: left;
-  font-size: 40px;
+  font-size: 42px;
   font-weight: bold;
-  line-height: 80px;
-  height: 80px;
-  width: 80px;
+  line-height: 90px;
+  height: 90px;
+  width: 90px;
   margin-right: -2px;
   margin-top: -2px;
   text-align: center;
@@ -62,27 +64,29 @@ body {
   display: table;
 }
 
+/* Dòng trạng thái */
 .status {
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 25px;
+  font-size: 26px;
   font-weight: bold;
   text-align: center;
 }
 
+/* Khu vực thông tin bên phải */
 .game-info {
+  margin-left: 40px;
+  flex: 1;
+  font-size: 15px; /* nhỏ hơn */
   display: flex;
   flex-direction: column;
-  font-size: 18px;
-  max-height: 400px;
-  overflow-y: auto; 
-  padding-right: 10px;
+  justify-content: flex-start;
 }
 
 .game-info button {
-  margin-bottom: 10px;
-  padding: 8px 16px;
-  font-size: 16px;
-  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
   border: 1px solid #ccc;
   cursor: pointer;
   transition: all 0.2s ease;
